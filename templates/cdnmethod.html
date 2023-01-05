@@ -1,0 +1,364 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Bootstrap Classes</title>
+  </head>
+  <body class="m-3">
+    <h4>Button</h4>
+    <h1 class="btn btn-primary">Login Here</h1>
+    <h1 class="btn btn-outline-warning">Login Here</h1>
+    <hr>
+
+    <h4 class="h3">badge</h4>
+    <h1>Lokesh<span class="badge badge-warning">V</span></h1>
+    <hr>
+
+    <h3>Alert</h3>
+    <h1 class="alert alert-danger">Danger a head....!</h1>
+    <hr>
+
+    <h3>Button Group</h3>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+    <hr>
+
+    <h3>Card</h3>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{% static 'images/rohit.4.jpg' %}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">About Rohit</h5>
+          <p class="card-text text-justify">Rohit scored ODI double-hundreds for fun, won six IPLs in the first 15 editions of the tournament, scored five hundreds at the 2019 ODI World Cup, and when he finally got to open in Tests in 2019, three quick hundreds in his first series in the role, one of them a double.</p>
+          <a href="#" class="btn btn-primary">More Info</a>
+        </div>
+      </div>
+      <hr>
+
+
+      <h3>Carousel</h3>
+      <div id="carouselExampleControls" class="carousel slide h-7" data-ride="carousel" >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/rohit.5.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/rohit.6.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/rohit.3.jpg' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+      <hr>
+
+      <h3>Collapse</h3>
+      <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"> First element</a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"> Second element</button>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"> Both elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              The India men's national cricket team, also known as Team India or the Men in Blue,[10] represents India in men's international cricket. It is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the International Cricket Council (ICC) with Test, One Day International (ODI) and Twenty20 International (T20I) status.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              The India men's national cricket team, also known as Team India or the Men in Blue,[10] represents India in men's international cricket. It is governed by the Board of Control for Cricket in India (BCCI), and is a Full Member of the International Cricket Council (ICC) with Test, One Day International (ODI) and Twenty20 International (T20I) status.            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+
+      <h3>Dropdouns</h3>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+          Acount details
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Account</a>
+          <a class="dropdown-item" href="#">Profile Photo</a>
+          <a class="dropdown-item" href="#">Details</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Log-out</a>
+        </div>
+      </div>
+      <hr>
+
+      <h3>Forms</h3>
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Resume*</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+      </form>
+      <hr>
+
+
+      <h3>Input Groups</h3>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Enter Full Name</span>
+        </div>
+        <input type="text" aria-label="First name" class="form-control">
+        <input type="text" aria-label="Last name" class="form-control">
+        <button class="btn btn-info ml=2">Submit</button>
+      </div>
+      <hr>
+
+
+      <h3>Jumbotron</h3>
+      <div class="jumbotron">
+        <h1 class="display-4">Virat:-</h1>
+        <p class="lead">Viral: Anushka Sharma And Virat Kohli Visit An Ashram In Mathura.</p>
+        <hr class="my-4">
+        <p> Virat Kohli and Anushka Sharma took time out from their busy schedules and visited an ashram in Vrindavan, Mathura. The pictures of the couple from the ashram are going viral on the Internet. The photos are reportedly from Baba Neem Karoli's ashram. In the viral images, Anushka and Virat can be seen meeting the people of the ashram - the actress can be seen in a black jacket and white cap, while the cricketer can be seen in an olive green jacket. They have covered their faces with masks. Seeing the images, it seems they distributed blankets to the people of the ashram. </p>
+        <a class="btn btn-dark btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <hr>
+
+
+      <h3>List Group</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Shirts
+          <span class="badge badge-primary badge-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          T-Shirts
+          <span class="badge badge-primary badge-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Pants 
+          <span class="badge badge-primary badge-pill">8</span>
+        </li>
+      </ul>
+      <hr>
+
+
+      <h3>Media Object</h3>
+      <div class="media">
+        <img src="{% static 'images/prabhas.jpg' %}" class="align-self-center mr-3" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0 text-justify">Uppalapati Venkata Suryanarayana Prabhas Raju </h5>
+          <p>In 2015, Prabhas appeared as Shivudu/Mahendra Baahubali and Amarendra Baahubali in S.S. Rajamouli's epic Baahubali: The Beginning which is the fourth-highest-grossing Indian film to date. The film started a new film movement named Pan-India films. Prabhas reprised his role in its sequel, Baahubali 2: The Conclusion (2017), which became the first Indian film ever to gross over ₹1,000 crore (US$155 million) in all languages in just ten days, and</p>
+          <p class="mb-0 text-justify">  Bahubali is the second highest-grossing Indian film to date. He won the SIIMA Award for Best Actor (Telugu) for his performance in The Conclusion. He increased his weight to 105 kg for Baahubali's character.</p>
+        </div>
+      </div>
+      <hr>
+
+
+      <h3>Modal</h3>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Edit Name
+      </button>
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enter New Name</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lokeswara Reddy Vennapusa
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+      <h3>Navs</h3>
+
+      <nav class="nav flex-column">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Log-out</a>
+        <a class="nav-link disabled">Disabled</a>
+      </nav>
+      <hr>
+
+      
+
+      <h2>Nav Bar</h2>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Flipcart</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Mens</a>
+                <a class="dropdown-item" href="#">Women</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Both</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <hr>
+
+
+      <h3>Pagination</h3>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+      <hr>
+
+      <h3>Popover</h3>
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click here</button>
+      <hr>
+
+
+
+      <h3>Progress</h3>
+      <div class="progress mt-2">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress mt-2">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress mt-2">
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress mt-2">
+        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress mt-2">
+        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <hr>
+
+
+      <h3>Scrollspy</h3>
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Sachin</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Dravid</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Ganguly</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Kapil Dev</a>
+      </div>
+      <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <h4 id="list-item-1">Sachin</h4>
+        <p>Sachin Tendulkar, in full Sachin Ramesh Tendulkar, (born April 24, 1973, Bombay [Mumbai], India), Indian professional cricket player, considered by many to be one of the greatest batsmen of all time. In 2012 he became the first cricketer to score 100 centuries (100 runs in a single innings) in international play.</p>
+        <h4 id="list-item-2">Dravid</h4>
+        <p>Rahul Sharad Dravid is an Indian cricket coach and former captain of the Indian national team, currently serving as its head coach. Prior to his appointment to the senior men's national team, Dravid was the Head of Cricket at the National Cricket Academy, and the head coach of the India Under-19 and India A teams</p>
+        <h4 id="list-item-3">Ganguly</h4>
+        <p>An aggressive captain, Ganguly is credited with having nurtured the careers of many young players who played under him, and transforming the Indian team into an aggressive fighting unit. Ganguly was awarded the Padma Shri in 2004. He was awarded with the Banga Bibhushan Award from the Government of West Bengal in 2013.</p>
+        <h4 id="list-item-4">Kapil Dev</h4>
+        <p>Kapil Dev Ramlal Nikhanj is an Indian former cricketer. He was a fast-medium bowler and a hard-hitting middle-order batsman, and was named by Wisden as the Indian Cricketer of the Century in 2002.</p>
+      </div>
+      <hr>
+
+
+      <h3>Spinners</h3>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        <span class="sr-only">Loading...</span>
+      </button>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
+      <hr>
+
+
+      <h3>Toasts</h3>
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Braking News</button>
+
+      <div class="position-fixed bottom-0 right-0 p-3" style="z-index: 5; right: 0; bottom: 0;">
+        <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+          <div class="toast-header">
+            <img src="{% static 'images/rohit.1.jpg' %}" class="rounded mr-1 " alt="...">
+            <strong class="mr-auto">"India Will Be In Serious Trouble..."</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is new massage
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+      <h3>Tooltips</h3>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+        Tooltip on left
+      </button>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
